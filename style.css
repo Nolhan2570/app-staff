@@ -1,0 +1,113 @@
+body{
+margin:0;
+font-family:Arial;
+background:#0f0f0f;
+color:white;
+}
+
+/* HEADER */
+header{
+text-align:center;
+font-size:34px;
+padding:20px;
+color:#5865F2;
+font-weight:bold;
+}
+
+/* LOGIN */
+#loginPanel{
+position:fixed;
+inset:0;
+background:black;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+z-index:9999;
+gap:10px;
+}
+
+/* GRID */
+.container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:15px;
+padding:15px;
+}
+
+/* CARD */
+.card{
+background:rgba(255,255,255,0.05);
+border:1px solid #5865F2;
+border-radius:15px;
+padding:15px;
+min-height:220px;
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+/* TITLE */
+h3{
+color:#5865F2;
+}
+
+/* BUTTON */
+.btn{
+padding:10px;
+border:none;
+border-radius:10px;
+background:#5865F2;
+color:white;
+cursor:pointer;
+margin-top:auto;
+}
+
+.btn:hover{
+background:#4752c4;
+}
+
+/* FORM */
+#form{
+display:none;
+position:fixed;
+inset:0;
+background:rgba(0,0,0,0.7);
+justify-content:center;
+align-items:center;
+}
+
+form{
+background:#111;
+padding:20px;
+border-radius:10px;
+width:300px;
+}
+
+/* INPUT */
+input{
+width:100%;
+margin:5px 0;
+padding:10px;
+border-radius:8px;
+border:none;
+}
+
+/* OVERLAY */
+#overlay{
+display:none;
+position:fixed;
+inset:0;
+background:rgba(0,0,0,0.8);
+align-items:center;
+justify-content:center;
+flex-direction:column;
+}
+
+/* ADMIN PANEL */
+#adminPanel{
+display:none;
+padding:20px;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portail Recrutement Collège</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- LOGIN ADMIN -->
+<div id="loginPanel">
+  <h2>Connexion RH</h2>
+  <input id="adminId" placeholder="ID admin">
+  <input id="adminMdP" type="password" placeholder="Mot de passe">
+  <button class="btn" onclick="loginAdmin()">Connexion</button>
+</div>
+
+<header>PORTAIL DE RECRUTEMENT COLLÈGE</header>
+
+<!-- OFFRES -->
+<div class="container">
+
+<div class="card">
+  <div class="topBadge"><div class="dot"></div>3</div>
+  <h3>Mathématiques</h3>
+  <div class="desc">Algèbre, géométrie, fonctions.</div>
+  <button class="btn" onclick="openForm('Mathématiques')">Candidater</button>
+</div>
+
+<div class="card">
+  <div class="topBadge"><div class="dot"></div>3</div>
+  <h3>Français</h3>
+  <div class="desc">Grammaire, littérature.</div>
+  <button class="btn" onclick="openForm('Français')">Candidater</button>
+</div>
+
+<div class="card red">
+  <div class="topBadge"><div class="dot"></div>1</div>
+  <h3>Ressources Humaines</h3>
+  <div class="desc">Gestion recrutement.</div>
+  <button class="btn" onclick="openForm('RH')">Candidater</button>
+</div>
+
+</div>
+
+<!-- FORM -->
+<div id="form">
+  <form onsubmit="send(event)">
+    <h3>Candidature</h3>
+
+    <input id="rp" placeholder="Nom RP" required>
+    <input id="exp" placeholder="Expérience RP" required>
+    <input id="dispo" placeholder="Disponibilité" required>
+    <input id="discord" placeholder="Discord" required>
+
+    <button class="btn" type="submit">Envoyer</button>
+  </form>
+</div>
+
+<!-- OVERLAY -->
+<div id="overlay">
+  <div class="envelope"></div>
+  <div class="text">
+    Ouvrez un ticket Discord pour suivre votre candidature.
+  </div>
+</div>
+
+<!-- ADMIN PANEL -->
+<div id="adminPanel">
+  <h2>🧠 Panel RH</h2>
+  <div id="candidatures"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
